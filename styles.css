@@ -1,0 +1,68 @@
+:root { 
+  font-family: 'Playfair Display', Georgia, serif; 
+}
+
+img {
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+
+.cartes {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.carte {
+  max-width: 100%;
+  border: 3px solid black;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+}
+
+.carte:hover {
+  transform: scale(1.05);
+}
+
+.carte.feu {
+  border-color: red;
+}
+
+.carte.plante {
+  border-color: green;
+}
+
+.carte.legendaire {
+  border-color: gold;
+  background: linear-gradient(135deg, #fff3b0, #f4a261);
+}
+
+.effet {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px 10px 10px 25px;
+  border-radius: 6px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+#carte-principale {
+  background-color: bisque;
+}
+
+#carte-deux {
+  background-color: lightgreen;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+}
