@@ -66,3 +66,8 @@ h1 {
   font-weight: bold;
   text-align: center;
 }
+.titre-site {
+  font-size: 2.5rem;
+  color: darkred;
+  margin-bottom: 30px;
+}
