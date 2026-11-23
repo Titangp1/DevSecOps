@@ -84,3 +84,10 @@ h1 {
   color: darkred;
   margin-bottom: 30px;
 }
+
+#catfact {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  text-align: center;
+  font-style: italic;
+}
