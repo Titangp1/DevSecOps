@@ -8,6 +8,19 @@ img {
   margin: auto;
 }
 
+
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: darkred;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .cartes {
   display: flex;
   justify-content: space-around;
