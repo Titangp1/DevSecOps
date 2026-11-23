@@ -102,3 +102,33 @@ h1 {
   border-radius: 5px;
   text-decoration: none;
 }
+
+.pokemon {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 16px;
+  border: 3px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#nom-pokemon {
+  display: block;
+  margin: 10px auto 0;
+  padding: 6px 10px;
+  font-size: 1rem;
+}
+
+#resultat-pokemon h3 {
+  text-transform: capitalize;
+}
+
+#resultat-pokemon img {
+  width: 150px;
+  image-rendering: pixelated;
+}
+
+#resultat-pokemon ul {
+  list-style: none;
+  padding: 0;
+}
