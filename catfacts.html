@@ -2,16 +2,24 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
-    <title>Cat Facts</title>
+    <title>Cat Facts et PokéAPI</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>
-      <h1 class="titre-site">Cat Facts</h1>
+      <h1 class="titre-site">Cat Facts et PokéAPI</h1>
     </header>
 
     <button type="button" id="btn-catfact">Cat Facts</button>
     <p id="catfact"></p>
+
+    <section class="pokemon">
+      <h2>PokéAPI</h2>
+      <label for="nom-pokemon">Choisis ton Pokémon :</label>
+      <input type="text" id="nom-pokemon" value="pikachu" placeholder="ex : pikachu, bulbasaur, 25">
+      <button type="button" id="btn-pokemon">Chercher le Pokémon</button>
+      <div id="resultat-pokemon"></div>
+    </section>
 
     <a href="index.html" class="bouton-lien">Retour à l'accueil</a>
 
