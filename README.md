@@ -1,6 +1,20 @@
 # DevSecOps – Site de cartes de créatures
 
-Site HTML/CSS versionné avec Git dans le cadre des labs Git (Labs 1 à 5).
+Site HTML/CSS/JavaScript versionné avec Git : labs Git (Labs 1 à 5) puis exercices API (Exercices 1 et 2).
+
+**Site en ligne :** https://titangp1.github.io/DevSecOps/
+
+## Structure du projet
+
+| Fichier | Rôle |
+|---|---|
+| `index.html` | Page d'accueil : les cartes de créatures + bouton « Voir les Cat Facts » |
+| `catfacts.html` | Page des exercices API (Cat Facts et PokéAPI) |
+| `script.js` | Code JavaScript des appels API (séparé du HTML) |
+| `styles.css` | Styles des deux pages |
+| `screenshots/` | Captures d'écran des labs Git |
+
+> `site1.html` (cité dans les labs ci-dessous) a été renommé en `index.html` pour être servi par défaut par GitHub Pages.
 
 ![Le site](screenshots/01-site.png)
 
@@ -48,3 +62,24 @@ Les deux pull requests ont été fusionnées sans conflit dans `main`.
 ## Historique final
 
 ![Graphe Git](screenshots/02-graphe-git.png)
+
+## Exercice 1 – Cat Facts API
+
+Sur `catfacts.html`, le bouton **Cat Facts** appelle `https://catfact.ninja/fact` avec `fetch` et affiche le fait reçu sous le bouton (message « Chargement... » pendant l'appel, message d'erreur en cas d'échec).
+
+Branche : `feat/cat-facts`, puis `feat/page-cat-facts` (page dédiée + bouton de redirection depuis l'accueil).
+
+## Exercice 2 – PokéAPI
+
+Sur la même page, on saisit le nom (en anglais) ou le numéro d'un Pokémon, puis le bouton **Chercher le Pokémon** appelle `https://pokeapi.co/api/v2/pokemon/<nom>` et affiche :
+- son sprite (image fournie par l'API),
+- son numéro, son nom et son type,
+- ses statistiques (hp, attack, defense, special-attack, special-defense, speed).
+
+Un nom inconnu affiche « Pokémon introuvable ». L'affichage est construit avec `textContent` / `createElement` (pas d'`innerHTML`) pour ne pas injecter de HTML venant de l'API.
+
+Branche : `feat/pokeapi`.
+
+## Lancer le site en local
+
+Ouvrir `index.html` dans un navigateur, ou publier via GitHub Pages (branche `main`, dossier racine). Chaque push sur `main` met le site en ligne à jour en une à deux minutes.
