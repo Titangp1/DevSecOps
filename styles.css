@@ -129,6 +129,14 @@ h1 {
 }
 
 #resultat-pokemon ul {
-  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 20px;
   padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+#resultat-pokemon img {
+  margin: 0 auto;
 }
