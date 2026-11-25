@@ -1,6 +1,6 @@
 # DevSecOps – Site de cartes de créatures
 
-Site HTML/CSS/JavaScript versionné avec Git : labs Git (Labs 1 à 5) puis exercices API (Exercices 1 et 2).
+Site HTML/CSS/JavaScript versionné avec Git : labs Git (Labs 1 à 5), exercices API (Exercices 1 et 2) puis exercices JavaScript (Exercices 1 et 2).
 
 **Site en ligne :** https://titangp1.github.io/DevSecOps/
 
@@ -11,6 +11,8 @@ Site HTML/CSS/JavaScript versionné avec Git : labs Git (Labs 1 à 5) puis exerc
 | `index.html` | Page d'accueil : les cartes de créatures + bouton « Voir les Cat Facts » |
 | `catfacts.html` | Page des exercices API (Cat Facts et PokéAPI) |
 | `script.js` | Code JavaScript des appels API (séparé du HTML) |
+| `exercice1.js` | JavaScript – Exercice 1 (variables, conditions, fonctions) |
+| `exercice2.js` | JavaScript – Exercice 2 (tableaux, objets, `forEach`, `map`, `filter`) |
 | `styles.css` | Styles des deux pages |
 | `screenshots/` | Captures d'écran des labs Git |
 
@@ -91,3 +93,16 @@ Fichier `exercice1.js`, chargé sur `index.html` avec `<script src="exercice1.js
 La fonction `afficherPokemonPrefere(nom, niveau)` affiche le Pokémon préféré dans la **console du navigateur** (F12 → onglet Console). Le fichier utilise les notions du cours : `console.log()`, `let` / `const`, les types (texte, nombre, booléen, `null`), `if / else if / else` avec `===`, et les fonctions.
 
 Branche : `feat/js-exercice1`.
+
+## JavaScript – Exercice 2 : Manipuler des tableaux et objets
+
+Fichier `exercice2.js`, chargé sur `index.html` avec `<script src="exercice2.js" defer>`.
+
+Cinq Pokémon sont stockés dans un tableau d'objets (`equipePokemon`) et affichés dans la **console du navigateur** (F12 → onglet Console). Le fichier met en pratique les notions du cours :
+- les objets `{ }` et les tableaux `[ ]`,
+- l'accès aux propriétés d'un objet (`equipePokemon[0].nom`),
+- `forEach()` pour parcourir et afficher chaque Pokémon,
+- `map()` pour extraire un tableau contenant uniquement les noms,
+- `filter()` pour isoler les Pokémon de niveau supérieur ou égal à 25.
+
+Branche : `feat/js-exercice2`.
