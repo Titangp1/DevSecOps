@@ -83,3 +83,11 @@ Branche : `feat/pokeapi`.
 ## Lancer le site en local
 
 Ouvrir `index.html` dans un navigateur, ou publier via GitHub Pages (branche `main`, dossier racine). Chaque push sur `main` met le site en ligne à jour en une à deux minutes.
+
+## JavaScript – Exercice 1 : Découvrir JavaScript
+
+Fichier `exercice1.js`, chargé sur `index.html` avec `<script src="exercice1.js" defer>` (`defer` = le script s'exécute une fois le HTML chargé).
+
+La fonction `afficherPokemonPrefere(nom, niveau)` affiche le Pokémon préféré dans la **console du navigateur** (F12 → onglet Console). Le fichier utilise les notions du cours : `console.log()`, `let` / `const`, les types (texte, nombre, booléen, `null`), `if / else if / else` avec `===`, et les fonctions.
+
+Branche : `feat/js-exercice1`.
